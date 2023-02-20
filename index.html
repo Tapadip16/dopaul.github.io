@@ -372,33 +372,32 @@
             <div class="row">
               <div class="form-item col-6 padd-15">
                 <div class="form-group">
-                  <form action="https://formsubmit.co/tapadippaul@gmail.com" target="_blank" method="POST"/>
                   <input type="text" class="form-control" name="name" placeholder="Full Name" required>
                 </div>
               </div>
               <div class="form-item col-6 padd-15">
                 <div class="form-group">
-                  <input type="email" class="form-control" placeholder="Email" required>
+                  <input type="email" class="form-control" id="email" placeholder="Email" required>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="form-item col-12 padd-15">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Subject">
+                  <input type="text" class="form-control" id="subject" placeholder="Subject">
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="form-item col-12 padd-15">
                 <div class="form-group">
-                  <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                  <textarea name="message box" class="form-control" id="message" placeholder="Message"></textarea>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="form-item col-12 padd-15">
-                <button type="submit" class="btn">Send Message</button>
+                <button type="submit" class="btn" onclick="sendMail()">Send Message</button>
               </div>
             </div>
           </div>
@@ -434,6 +433,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
     referrerpolicy="no-referrer"></script>
   <script src="Js/script.js"></script>
+  <script src="Js/email.js"></script>
   <script src="Js/style-switcher.js"></script>
+  <!-- ==== Email Function ==== -->
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("DyODQRL0Ft7IYvIR2");
+   })();
+</script>
 </body>
 </html>
