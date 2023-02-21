@@ -372,7 +372,7 @@
             <div class="row">
               <div class="form-item col-6 padd-15">
                 <div class="form-group">
-                  <input type="text" class="form-control" name="name" placeholder="Full Name" required>
+                  <input type="text" class="form-control" id="name" placeholder="Full Name" required>
                 </div>
               </div>
               <div class="form-item col-6 padd-15">
@@ -397,7 +397,7 @@
             </div>
             <div class="row">
               <div class="form-item col-12 padd-15">
-                <button type="submit" class="btn" onclick="sendMail()">Send Message</button>
+                <button type="submit" class="btn">Send Message</button>
               </div>
             </div>
           </div>
@@ -433,16 +433,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
     referrerpolicy="no-referrer"></script>
   <script src="Js/script.js"></script>
-  <script src="Js/email.js"></script>
   <script src="Js/style-switcher.js"></script>
-  <!-- ==== Email Function ==== -->
-  <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("DyODQRL0Ft7IYvIR2");
-   })();
-</script>
 </body>
 </html>
